@@ -27,7 +27,7 @@ print(sum(lst))
 print(max(lst))
 print(min(lst))
 
-# Slicing, [-1] 등 음수 인덱스 활용
+print("Slicing, [-1] 등 음수 인덱스 활용")
 lst = [0] + lst
 print(lst)
 lst = lst + [9]
