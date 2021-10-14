@@ -41,6 +41,6 @@ num_list = list(map(int, input().split()))
 print(max(num_list) - min(num_list))
 
 # 남 답
-N, lst = input, list(map(int, input().split()))
+N, lst = input(), list(map(int, input().split()))
 min, max = min(lst), max(lst)
 print(max - min)

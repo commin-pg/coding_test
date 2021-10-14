@@ -17,7 +17,8 @@ M개의 줄에 답을 출력한다. 존재하면 1을, 존재하지 않으면 0�
 #         print(0)
 
 # 남 풀이
-N, A = int(input()), {i: 1 for i in map(int, input().split())}
+N, A = input(), {i: 1 for i in map(int, input().split())}
+print(A)
 M = input()
-for i in list(map(int,input().split())):
-    print(A.get(i,0))
+for i in list(map(int, input().split())):
+    print(A.get(i, 0))

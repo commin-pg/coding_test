@@ -13,7 +13,10 @@ print(type(3 / 3))  # 나누기 연산 하나만 사용하면, float 자료형�
 
 print(type(3 // 3))  # 나누기 연산 두개를 사용하면, int 자료형으로 떨어진다.
 
+print("divmod")
 print(divmod(7, 3), type(divmod(7, 3)))  # 몫과 나머지를 한번에 구해준다. (tuple로 떨어진다.)
+
+
 
 """
 [Float 실수 자료형]
@@ -58,7 +61,9 @@ s = s.join([str(i) for i in range(10000)])  # 실행속도 5.01 us
 
 s = 'abcd'
 print(s[:1])  # 첫번째 문자까지 슬라이스
+print(s[:-1])  # 첫번째 문자까지 슬라이스
 print(s[2:])  # 끝에서 두번째 문자까지 슬라이스
+print(s[::-1])
 
 # Char 를 ord와 chr 로 다루기
 print(chr(65))
