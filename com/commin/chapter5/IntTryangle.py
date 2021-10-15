@@ -19,6 +19,25 @@
 """
 
 N = int(input())
-G = [list(map(int, input().split())) for _ in range(N)]
-dx = [0, 1]
+# G = [list(map(int, input().split())) for _ in range(N)]
+A = [[0 for _ in range(N + 1)] for i in range(N + 1)]
+DP = [[0 for _ in range(N + 1)] for i in range(N + 1)]
 
+for i in range(1, N + 1):
+    tmp = list(map(int, input().split()))
+    for j in range(1, i + 1):
+        A[i][j] = tmp[j - 1]
+
+# A[i][j] = max(A[i-1][j-1],A[i-1][j]) +A[i][j]
+for i in range(1, N + 1):
+    for j in range(1, i + 1):
+        DP[i][j] = max(DP[i - 1][j - 1], DP[i - 1][j]) + A[i][j]
+
+print(max(DP[-1]))
+
+# print(A[3 - 1][1 - 1], A[3 - 1][1] + A[3][1])
+
+# print(A[1-1][1-1])
+# print(A[2 - 1][1])
+
+# for i in range(2, N + 1):
