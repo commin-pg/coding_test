@@ -1,3 +1,4 @@
+# N*N 행렬 오른쪽으로 90도 돌리기
 def rotate_90(m):
     N = len(m)
     ret = [[0] * N for _ in range(N)]
@@ -9,4 +10,3 @@ def rotate_90(m):
 
 
 print(rotate_90(rotate_90([[1, 2, 3], [4, 5, 6], [7, 8, 9]])))
-
