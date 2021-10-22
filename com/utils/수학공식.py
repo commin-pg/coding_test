@@ -1,6 +1,7 @@
 import math
 
 
+# gcd = 최대공약수
 # 최소공배수 구하기
 # 최소공배수 = (x*y) / gcd(x,y)
 def factorization(x):
@@ -37,7 +38,6 @@ def elatostenes(n):
 print(elatostenes(100))
 
 
-
 def is_prime_number(n):
     """소수판별 함수"""
     if n == 0 or n == 1:  # 0,1 은 소수가 아님
@@ -48,3 +48,5 @@ def is_prime_number(n):
                 return False
 
         return True
+
+
